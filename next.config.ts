@@ -10,6 +10,7 @@ const nextConfig: NextConfig = {
       compilationMode: "annotation",
     },
   },
+  basePath: process.env.BASE_PATH || "", // 필요시 Azure 환경에 따라 basePath 설정
 };
 
 export default withNextIntl(nextConfig);
